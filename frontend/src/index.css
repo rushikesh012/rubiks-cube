@@ -1,0 +1,21 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply min-h-screen bg-slate-950 text-slate-100;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.14), transparent 42%),
+    radial-gradient(circle at 75% 0%, rgba(251, 191, 36, 0.08), transparent 40%),
+    linear-gradient(160deg, #020617 0%, #0f172a 55%, #020617 100%);
+}
+
+.glass {
+  @apply border border-slate-700/60 bg-slate-900/50 backdrop-blur-xl shadow-glass;
+}
